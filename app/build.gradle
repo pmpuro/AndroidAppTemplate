@@ -35,7 +35,8 @@ android {
 
 versioning {
     //excludeBuildTypes = "debug" // default: null
-    keepOriginalBundleFile = false // default: false
+    excludeBuildTypes = "debug"
+    keepOriginalBundleFile = true // default: false
     keepOriginalMappingFile = true // default: true
 }
 
