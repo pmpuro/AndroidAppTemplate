@@ -19,5 +19,5 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v1.9
         if: always()
         with:
-          - files: app/build/test-results/**/*.xml
+          files: app/build/test-results/**/*.xml
 
