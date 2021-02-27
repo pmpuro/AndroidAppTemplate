@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'de.nanogiants.android-versioning' version '2.4.0'
 }
 
 android {
@@ -12,8 +11,8 @@ android {
         applicationId "pmpuro.androidapptemplate"
         minSdkVersion 29
         targetSdkVersion 30
-        versionCode versioning.getVersionCode()
-        versionName versioning.getVersionName()
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,13 +30,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-}
-
-versioning {
-    //excludeBuildTypes = "debug" // default: null
-    excludeBuildTypes = "debug"
-    keepOriginalBundleFile = true // default: false
-    keepOriginalMappingFile = true // default: true
 }
 
 dependencies {
